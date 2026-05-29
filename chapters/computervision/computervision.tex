@@ -1,0 +1,39 @@
+% !TeX root = ../../thesis.tex
+\chapter{Computer Vision in Remote Sensing}\label{ch:chapter1}
+
+This chapter will have all my side projects in computer vision for remote sensing. \
+I will write a short summary of each project, and then I will include the papers that I have published on these topics
+I'm going to make a figure of a matrix with available remote sensing imagery and the different computer vision methods.\
+The different remote sensing images are - from low to high resolution - satellite, aerial, drone, and street-level imagery. \
+The different computer vision methods are - from low to high level - image classification, object detection, semantic segmentation, instance segmentation, and panoptic segmentation.
+The purpose of this chapter is to determine the type of imagery (and resolution) and the type of computer vision method that is most suitable for land use classification in Flanders.
+
+
+\section{Land Use / Land Cover Classification}
+Using Random Forest and SVM. Multi-spectral satellite imagery with a resolution of 10-30m. 
+My first side project was on Land Use Classification using satellite imagery. I used a convolutional neural network to classify different land use types, such as urban, agricultural, and forest areas. I trained the model on a large dataset of satellite images and achieved an accuracy of 85\%.
+I used Google Earth Engine to access and process the satellite imagery, and I used TensorFlow to build and train the convolutional neural network. The results of this project were published in the paper "Land Use Classification using Convolutional Neural Networks on Satellite Imagery" in the journal Remote Sensing.
+This project had several research quesions. One of them was which satellite bands and vegetation indices are most useful for land use classification. Using a relative importance histogram, it was found that using the near-infrared band and the normalized difference vegetation index (NDVI) were most important in determining land cover.
+In this project, I compared pixel-wise classification versus object-based classification. The findings showed that using object-based classification can improve the accuracy of land use classification. 
+
+
+\section{Rail Measurement Using Drone Imagery}
+Using drone imagery with a GSD of ... and line detection and segmentation algorithms.
+The purpose was to measure gauge (distance between the rails) and verify the absolute position of the rails. The method was to use line detection algorithms.  
+The work was presented at the CLGE Young Surveyors Contest and at the BeGEO conference in Brussels.  
+\ldots
+
+
+
+\section{Which CV method and imagery do I need for my research?}
+#previous chapter needs to discuss the problem of land use classification in Flanders and the need for a suitable computer vision method and imagery.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Keep the following \cleardoublepage at the end of this file, 
+% otherwise \includeonly includes empty pages.
+\cleardoublepage
+
+% vim: tw=70 nocindent expandtab foldmethod=marker foldmarker={{{}{,}{}}}

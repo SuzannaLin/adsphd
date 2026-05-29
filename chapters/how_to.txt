@@ -1,0 +1,3 @@
+How to run the sh file to make a new chapter
+go to dir ./AI_URBAN/adsphd/chapters, type in command line:
+./makeemptychapter.sh <chaptername>
